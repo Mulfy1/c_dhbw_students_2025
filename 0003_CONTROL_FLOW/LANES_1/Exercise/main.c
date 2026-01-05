@@ -9,16 +9,15 @@ int main()
     printf("Lane (1=left, 2=center, 3=right): %d\n\n\n", lane);
     printf("\t \tL\t\tC\t\tR\n");
     printf("\t|\t \t|\t \t|\t \t|\n");
-    if (lane == 1)
+    switch (lane)
     {
+    case 1:
         printf("\t|\tX\t|\t \t|\t \t|\n");
-    }
-    else if (lane == 2)
-    {
+        break;
+    case 2:
         printf("\t|\t \t|\tX\t|\t \t|\n");
-    }
-    else if (lane == 3)
-    {
+        break;
+    case 3:
         printf("\t|\t \t|\t \t|\tX\t|\n");
     }
     printf("\t|\t \t|\t \t|\t \t|\n");
